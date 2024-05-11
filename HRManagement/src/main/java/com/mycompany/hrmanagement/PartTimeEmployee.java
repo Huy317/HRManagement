@@ -3,12 +3,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.hrmanagement;
+
 import java.util.*;
+
 /**
  *
  * @author Student
  */
 public class PartTimeEmployee extends Employee {
+
     private int workingHour;
     private float payRate;
 
@@ -25,9 +28,8 @@ public class PartTimeEmployee extends Employee {
 
     public PartTimeEmployee() {
     }
-    
-    
-    public void InputPartTimeEmployee(){
+
+    public void InputPartTimeEmployee() {
         super.InputEmployee();
         Scanner sc = new Scanner(System.in);
         System.out.print("Working hour: ");
@@ -37,7 +39,8 @@ public class PartTimeEmployee extends Employee {
         payRate = sc.nextFloat();
         sc.nextLine();
     }
-    public void EditPartTimeEmp(){
+
+    public void EditPartTimeEmp() {
         System.out.println(this.getInfo());
         super.Edit();
         Scanner sc = new Scanner(System.in);
@@ -48,13 +51,15 @@ public class PartTimeEmployee extends Employee {
         payRate = sc.nextFloat();
         sc.nextLine();
     }
+
     @Override
-    public String getInfo(){
-        String s = "ID: "+id+" Name: "+name+" YOB: "+yearOfBirth+" Address: "+address+" Phone: "+phone+" Working Hour: "+workingHour+" Pay rate: "+payRate;
+    public String getInfo() {
+        String s = "ID: " + id + " Name: " + name + " YOB: " + yearOfBirth + " Address: " + address + " Phone: " + phone + " Working Hour: " + workingHour + " Pay rate: " + payRate;
         return s;
     }
+
     @Override
-    public float getPayment(){
-        return (float)workingHour*payRate;
+    public float getPayment() {
+        return (float) workingHour * payRate;
     }
 }

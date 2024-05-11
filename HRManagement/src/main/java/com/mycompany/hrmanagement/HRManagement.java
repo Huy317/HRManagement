@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @author Student
  */
 public class HRManagement {
-    
+
     public static void main(String[] args) {
         Manager manager = new Manager();
         manager.addFullTimeEmp(new FullTimeEmployee(100, "1", "nguyen van a", 1990, "", ""));
@@ -18,7 +18,7 @@ public class HRManagement {
         manager.addPartTimeEmp(new PartTimeEmployee(8, 5, "3", "le gia c", 2002, "", ""));
         manager.addPartTimeEmp(new PartTimeEmployee(5, 10, "4", "le cong d", 1988, "", ""));
         manager.addPartTimeEmp(new PartTimeEmployee(5, 5, "5", "le cong d", 1988, "", ""));
-     
+
 //        manager.sortByAgeAndPayment();
 //        manager.displayAllEmployee();
         Scanner sc = new Scanner(System.in);
@@ -75,9 +75,9 @@ public class HRManagement {
                     manager.sortByAgeAndPayment();
                     break;
                 case 11:
-                    
+
                     break;
-                
+
                 default:
                     throw new AssertionError();
             }

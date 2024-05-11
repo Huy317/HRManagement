@@ -3,12 +3,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.hrmanagement;
+
 import java.util.*;
+
 /**
  *
  * @author Student
  */
 public abstract class Employee {
+
     protected String id;
     protected String name;
     protected int yearOfBirth;
@@ -16,6 +19,7 @@ public abstract class Employee {
     protected String phone;
 
     protected abstract String getInfo();
+
     protected abstract float getPayment();
 
     protected Employee(String id, String name, int yearOfBirth, String address, String phone) {
@@ -28,7 +32,8 @@ public abstract class Employee {
 
     protected Employee() {
     }
-    protected void InputEmployee(){
+
+    protected void InputEmployee() {
         Scanner sc = new Scanner(System.in);
         System.out.print("ID: ");
         id = sc.nextLine();
@@ -42,8 +47,8 @@ public abstract class Employee {
         System.out.print("Phone: ");
         phone = sc.nextLine();
     }
-    
-    public void Edit(){
+
+    public void Edit() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Edit ID: ");
         id = sc.nextLine();
@@ -57,6 +62,7 @@ public abstract class Employee {
         System.out.print("Edit Phone: ");
         phone = sc.nextLine();
     }
+
     public String getId() {
         return id;
     }
@@ -76,5 +82,5 @@ public abstract class Employee {
     public String getPhone() {
         return phone;
     }
-    
+
 }
