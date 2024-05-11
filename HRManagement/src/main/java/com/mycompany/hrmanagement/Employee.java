@@ -28,7 +28,7 @@ public abstract class Employee {
 
     protected Employee() {
     }
-    protected void Input(){
+    protected void InputEmployee(){
         Scanner sc = new Scanner(System.in);
         System.out.print("ID: ");
         id = sc.nextLine();

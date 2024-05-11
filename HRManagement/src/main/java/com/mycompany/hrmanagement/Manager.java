@@ -22,5 +22,30 @@ public class Manager {
         this.partTimeList = part;
     }
     
-    
+    public void addFullTimeEmp(){
+        FullTimeEmployee emp = new FullTimeEmployee();
+        emp.InputFullTimeEmployee();
+        fullTimeList.add(emp);
+    }
+    public void addFullTimeEmp(FullTimeEmployee emp){
+        fullTimeList.add(emp);
+    }
+    public void addPartTimeEmp(){
+        PartTimeEmployee emp = new PartTimeEmployee();
+        emp.InputPartTimeEmployee();
+        partTimeList.add(emp);
+    }
+    public void addPartTimeEmp(PartTimeEmployee emp){
+        partTimeList.add(emp);
+    }
+    public void displayFullTimeList(){
+        for (FullTimeEmployee i : fullTimeList){
+            System.out.println(i.getInfo());
+        }
+    }
+    public void displayPartTimeList(){
+        for (PartTimeEmployee i : partTimeList){
+            System.out.println(i.getInfo());
+        }
+    }
 }
