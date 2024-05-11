@@ -37,6 +37,17 @@ public class PartTimeEmployee extends Employee {
         payRate = sc.nextFloat();
         sc.nextLine();
     }
+    public void EditPartTimeEmp(){
+        System.out.println(this.getInfo());
+        super.Edit();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Edit Working hour: ");
+        workingHour = sc.nextInt();
+        sc.nextLine();
+        System.out.print("Edit Pay rate: ");
+        payRate = sc.nextFloat();
+        sc.nextLine();
+    }
     @Override
     public String getInfo(){
         String s = "ID: "+id+" Name: "+name+" YOB: "+yearOfBirth+" Address: "+address+" Phone: "+phone+" Working Hour: "+workingHour+" Pay rate: "+payRate;

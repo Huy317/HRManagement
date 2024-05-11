@@ -30,6 +30,15 @@ public class FullTimeEmployee extends Employee{
         salary = sc.nextFloat();
         sc.nextLine();
     }
+    
+    public void EditFullTimeEmp(){
+        System.out.println(this.getInfo());
+        super.Edit();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Edit Salary: ");
+        salary = sc.nextFloat();
+        sc.nextLine();
+    }
     @Override
     public String getInfo(){
         String s = "ID: "+id+" Name: "+name+" YOB: "+yearOfBirth+" Address: "+address+" Phone: "+phone+" Salary: "+salary;

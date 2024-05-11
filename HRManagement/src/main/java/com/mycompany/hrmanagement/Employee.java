@@ -42,4 +42,39 @@ public abstract class Employee {
         System.out.print("Phone: ");
         phone = sc.nextLine();
     }
+    
+    public void Edit(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Edit ID: ");
+        id = sc.nextLine();
+        System.out.print("Edit Name: ");
+        name = sc.nextLine();
+        System.out.print("Edit Year of birth: ");
+        yearOfBirth = sc.nextInt();
+        sc.nextLine();
+        System.out.print("Edit Address: ");
+        address = sc.nextLine();
+        System.out.print("Edit Phone: ");
+        phone = sc.nextLine();
+    }
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getYearOfBirth() {
+        return yearOfBirth;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+    
 }
